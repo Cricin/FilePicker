@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical">
+
+  <android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.Toolbar
+      android:id="@+id/file_picker_toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="?file_picker_main_color"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      app:contentInsetStart="0dp"
+      app:contentInsetStartWithNavigation="0dp"
+      app:popupTheme="@style/Theme.AppCompat.Light"/>
+
+  </android.support.design.widget.AppBarLayout>
+
+  <HorizontalScrollView
+    android:background="?file_picker_frame_color"
+    android:layout_width="match_parent"
+    android:layout_height="24dp"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp">
+
+    <LinearLayout
+      android:id="@+id/file_picker_navigator"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:gravity="center_vertical">
+
+      <include layout="@layout/file_picker_navigator_item"/>
+
+    </LinearLayout>
+
+  </HorizontalScrollView>
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#FFDDDDDD"/>
+
+  <android.support.v7.widget.RecyclerView
+    android:background="?file_picker_frame_color"
+    android:id="@+id/file_picker_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"/>
+
+  <FrameLayout
+    android:background="?file_picker_frame_color"
+    android:layout_width="match_parent"
+    android:layout_height="24dp">
+
+    <View
+      android:id="@+id/file_picker_storage_info_view"
+      android:layout_width="100dp"
+      android:layout_height="match_parent"
+      android:background="?file_picker_usage_color"/>
+
+    <TextView
+      android:textColor="?file_picker_common_text_color"
+      android:id="@+id/file_picker_storage_info_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="end|center_vertical"
+      android:layout_marginEnd="8dp"
+      tools:text="8GB/16GB"/>
+
+  </FrameLayout>
+
+</LinearLayout>

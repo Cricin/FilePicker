@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:gravity="center_horizontal"
+  android:orientation="vertical"
+  tools:context=".MainActivity">
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="noRestriction"
+    android:text="无限制"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="chooseDir"
+    android:text="选择文件夹"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="chooseFile"
+    android:text="选择文件"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="darkTheme"
+    android:text="暗色主题"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="sortByName"
+    android:text="按文件名排序"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="sortByLength"
+    android:text="按文件大小排序"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="sortByModifyTime"
+    android:text="按文件修改时间排序"/>
+
+  <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="chooseJpg"
+    android:text="只选择JPG文件"/>
+
+  <LinearLayout
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:dividerPadding="10dp"
+    android:orientation="vertical"
+    android:showDividers="end"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <style name="FilePicker" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="file_picker_main_color">#008577</item>
+    <item name="file_picker_select_border_color">#AAAAAA</item>
+    <item name="file_picker_select_solid_color">?file_picker_main_color</item>
+    <item name="file_picker_usage_color">?file_picker_main_color</item>
+    <item name="file_picker_folder_tint">#68C9F9</item>
+    <item name="file_picker_common_text_color">@android:color/black</item>
+    <item name="file_picker_frame_color">@android:color/white</item>
+
+    <item name="colorPrimary">?file_picker_main_color</item>
+    <item name="colorPrimaryDark">?file_picker_main_color</item>
+  </style>
+
+  <style name="FilePicker_Dark" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="file_picker_main_color">#FF444444</item>
+    <item name="file_picker_select_border_color">#AAAAAA</item>
+    <item name="file_picker_select_solid_color">#008577</item>
+    <item name="file_picker_usage_color">#008577</item>
+    <item name="file_picker_folder_tint">#68C9F9</item>
+    <item name="file_picker_common_text_color">@android:color/white</item>
+    <item name="file_picker_frame_color">?file_picker_main_color</item>
+
+    <item name="colorPrimary">?file_picker_main_color</item>
+    <item name="colorPrimaryDark">?file_picker_main_color</item>
+  </style>
+
+
+  <attr name="file_picker_main_color" format="color"/>
+  <attr name="file_picker_select_border_color" format="color"/>
+  <attr name="file_picker_select_solid_color" format="color"/>
+  <attr name="file_picker_usage_color" format="color"/>
+  <attr name="file_picker_folder_tint" format="color"/>
+  <attr name="file_picker_common_text_color" format="color"/>
+  <attr name="file_picker_frame_color" format="color"/>
+</resources>

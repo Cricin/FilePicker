@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="90dp"
+  tools:layout_width="80dp">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="10dp">
+
+    <TextView
+      android:id="@+id/file_picker_item_text_content"
+      android:layout_width="46dp"
+      android:layout_height="50dp"
+      android:layout_gravity="center_horizontal"
+      android:ellipsize="end"
+      android:lines="3"
+      android:paddingTop="6dp"
+      android:textSize="10sp"
+      tools:text="sample content"/>
+
+    <ImageView
+      android:id="@+id/file_picker_item_preview"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_gravity="center_horizontal"
+      android:contentDescription="@null"
+      android:scaleType="centerCrop"
+      tools:src="@drawable/file_picker_icon_file"/>
+
+    <TextView
+      android:id="@+id/file_picker_item_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:ellipsize="end"
+      android:lines="1"
+      android:maxEms="4"
+      android:textColor="@android:color/white"
+      tools:text="TXT"/>
+
+  </FrameLayout>
+
+  <TextView
+    android:id="@+id/file_picker_item_name"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="50dp"
+    android:ellipsize="end"
+    android:lines="1"
+    android:textColor="@android:color/black"
+    tools:text="filename"/>
+
+  <ImageView
+    android:id="@+id/file_picker_item_select"
+    android:layout_width="68dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:contentDescription="@null"
+    android:paddingStart="26dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingEnd="26dp"
+    android:src="@drawable/file_picker_select_btn_bg"/>
+
+</FrameLayout>
