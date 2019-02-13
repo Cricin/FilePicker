@@ -1,9 +1,6 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.github.dcendents.android-maven'
 
 def verName = '0.0.1'
-group = 'cn.cricin'
-version = '0.0.1'
 
 android {
   compileSdkVersion 27
@@ -34,20 +31,9 @@ dependencies {
   }
 }
 
-task androidJavadocs(type: Javadoc) {
-  source = android.sourceSets.main.java.srcDirs
+ext {
+  PUBLISH_GROUP_ID = 'cn.cricin'
+  PUBLISH_ARTIFACT_ID = 'filepicker'
+  PUBLISH_VERSION = verName
 }
-
-task androidJavadocsJar(type: Jar) {
-  classifier = 'javadoc'
-  from androidJavadocs.destinationDir
-}
-task androidSourcesJar(type: Jar) {
-  classifier = 'sources'
-  from android.sourceSets.main.java.srcDirs
-}
-
-artifacts {
-  archives androidSourcesJar
-  archives androidJavadocsJar
-}
+apply from: 'https://raw.githubusercontent.com/blundell/release-android-library/master/android-release-aar.gradle'
