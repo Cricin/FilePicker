@@ -1,7 +1,9 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.github.dcendents.android-maven'
 
 def verName = '0.0.1'
+group = 'cn.cricin'
+version = '0.0.1'
 
 android {
   compileSdkVersion 27
@@ -48,14 +50,4 @@ task androidSourcesJar(type: Jar) {
 artifacts {
   archives androidSourcesJar
   archives androidJavadocsJar
-}
-
-publish {
-  userOrg = 'tangchaomian'//bintray.com你的用户名
-  groupId = 'cn.cricin'//jcenter上的路径
-  artifactId = 'filepicker'
-  publishVersion = verName
-  repoName = 'tangchaomian'
-  desc = 'A File Picker Library For Android'
-  website = 'https://github.com/Cricin/FilePicker'
 }

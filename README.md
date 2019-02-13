@@ -8,7 +8,7 @@ For a working implementation, please have a look at the Sample Project - app
 
 Usage:
 
-1 gradle dependency, add `compile 'cn.cricin.filepicker:0.0.1` to `build.gradle`
+1 gradle dependency, add `compile 'cn.cricin:filepicker:0.0.1` to `build.gradle`
 
 2 The FilePicker configuration is created using the builder pattern.
 ```

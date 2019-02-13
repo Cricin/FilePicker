@@ -1,4 +1,4 @@
-package cn.cricin.app;
+package cn.cricin.filepicker.app;
 
 import android.content.Intent;
 import android.os.Bundle;
